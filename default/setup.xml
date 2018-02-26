@@ -1,0 +1,13 @@
+<setup>
+  <block title="Reaper Setup" endpoint="configs/conf-threshingfloor" entity="api-config">
+    <text>Configure the Reaper Plugin. (https://threshingfloor.io)</text>
+    <input field="api_key">
+      <label>API Key</label>
+      <type>text</type>
+    </input>
+    <input field="base_uri">
+      <label>Base URI</label>
+      <type>text</type>
+    </input>
+  </block>
+</setup>
