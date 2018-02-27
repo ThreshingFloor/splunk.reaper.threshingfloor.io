@@ -1,0 +1,3 @@
+[commands/reaper]
+access = read : [ admin, user ], write : [ admin ]
+export = system

@@ -10,7 +10,7 @@ import StringIO
 import subprocess
 
 @Configuration()
-class ReaperReduceCommand(EventingCommand):
+class ReaperCommand(EventingCommand):
     """ Filters out noise from Splunk queries by leveraging the Threshing Floor
         API.
     ##Syntax
