@@ -96,12 +96,12 @@ Navigate to the Splunk homepage, and click "Reaper" from the list of plugins on 
 
 ![Adjust Time Window](images/tutorial-5.png)
 
-Run a query, and then add a pipe to the reaper command with the appropriate type set, as seen below.
+Run a query, and then add a pipe to the `reaper` command with the appropriate type set, as seen below.
 
 ![Sample Commands](images/tutorial-6.png)
 
-Look below for other examples of commands that can be run with reaper.
+Look below for other examples of commands that can be run with Reaper.
 
 ## Privacy Notice
 
-In order to reduce noise from your queries, we need to collect metadata from those them. This includes IP addresses, usernames, user agent strings, referrers, and request URI's. We use this metadata to enchance the results of our API. If you have sensitive data in your log files or prefer to not share this data with us, contact us at info@threshingfloor.io about a private on-premesis solution.
+In order to reduce noise from your queries, we need to collect metadata from those them. This includes IP addresses, usernames, user agent strings, referrers, and request URIs. We use this metadata to enchance the results of our API. If you have sensitive data in your log files or prefer to not share this data with us, contact us at info@threshingfloor.io about a private on-premesis solution.
