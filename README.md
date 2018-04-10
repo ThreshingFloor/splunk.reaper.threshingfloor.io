@@ -58,7 +58,7 @@ Then navigate to the web interface of your Splunk instance and add a plugin. Sel
 ### Testing with Docker
 This plugin can be run on a fresh instance of Splunk with Docker using the following commands:
 ```
-$ git pull --recursive git@github.com:ThreshingFloor/splunk.reaper.threshingfloor.io.git
+$ git clone git@github.com:ThreshingFloor/splunk.reaper.threshingfloor.io.git
 $ docker run -p 8000:8000 -d --env SPLUNK_START_ARGS="--accept-license" -e "SPLUNK_USER=root" -v ~/splunk.reaper.threshingfloor.io/:/opt/splunk/etc/apps/threshingfloor splunk/splunk
 ```
 
@@ -72,33 +72,33 @@ Follow these steps to set up your fresh Splunk instance with Reaper.
 
 ### Configuration
 
-After installation, you will be presented with a configuration panel. Insert your API key here which can be found in ~/.threshingfloor.cfg on your system. If you don't have this file, install the CLI tool (git@github.com:ThreshingFloor/cli.reaper.threshingfloor.io.git) and run it with the --configure option set.
+After installation, you will be presented with a configuration panel. Insert your API key here which can be found in ~/.tf.cfg on your system. If you don't have this file, install the CLI tool (git@github.com:ThreshingFloor/cli.reaper.threshingfloor.io.git) and run it with the --configure option set, or request an API key from info@threshingfloor.io.
 
-![Plugin Configuration]()
+![Plugin Configuration](images/tutorial-1.png)
 
 ### Data import
 
 Click on the splunk logo in the top left corner to go to the main Splunk homepage.
 
-![Splunk Homepage]()
+![Splunk Homepage](images/tutorial-2.png)
 
 Select "Add Data".
 
-![Add data]()
+![Add data](images/tutorial-3.png)
 
 Select "Upload Files from my Computer" and follow the instructions.
 
-![Upload Data]()
+![Upload Data](images/tutorial-4.png)
 
 ### Running for the first time
 
 Navigate to the Splunk homepage, and click "Reaper" from the list of plugins on the left. On the next screen, select a data source that was uploaded in the previous step. You may need to adjust the time window so your query will return results.
 
-![Adjust Time Window]()
+![Adjust Time Window](images/tutorial-5.png)
 
 Run a query, and then add a pipe to the reaper command with the appropriate type set, as seen below.
 
-![Sample Commands]()
+![Sample Commands](images/tutorial-6.png)
 
 Look below for other examples of commands that can be run with reaper.
 
